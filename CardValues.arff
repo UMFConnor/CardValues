@@ -1,0 +1,34 @@
+% Card Values
+%
+% Attribute information:
+%
+% 	Card Game:	MTG = Magic the Gathering; P = Pokemon
+%	Rarity: U = Uncommon; R = Rare; M = Mythic; V = V; VM = VMax; F = Full Art; AF = Alternate Full Art; AS = Alternate Secret Art; S = Secret Rare
+%	Set: E = Evolving Skies; C = Chilling Reign; DM = Double Masters; BBG = Battle for Baldur's Gate
+%	Condition: M = Mint; NM = Near Mint; LP = Lightly Played; P = Played; RP = Roughly Played
+%	Value: Market selling price
+%
+@relation Card Values
+
+@attribute 'TCG' {'MTG', 'P'}
+@attribute 'Rarity' {'U', 'R', 'M', 'V', 'VM', 'F', 'A', 'S'}
+@attribute 'Set' {'E', 'C', 'DM', 'BBG'}
+@attribute 'Condition' {'M', 'NM', 'LP', 'P', 'RP'}
+@attribute 'Value' numeric
+
+@data
+'P', 'AF', 'E', 'NM', 49.00
+'P', 'S', 'E', 'NM', 33.73
+'P', 'F', 'E', 'NM', 16.49
+'P', 'S', 'E', 'NM', 31.98
+'P', 'AS', 'C', 'NM', 91.70
+'P', 'AF', 'C', 'NM', 85.70
+'P', 'S', 'C', 'LP', 13.99
+'P', 'V', 'C', 'NM', 1.75
+'MTG', 'M', 'DM', 'NM', 60.38
+'MTG', 'R', 'DM', 'LP', 24.91
+'MTG', 'M', 'DM', 'LP', 40.07
+'MTG', 'R', 'DM', 'NM', 33.01
+'MTG', 'R', 'BBG', 'NM', 28.06
+'MTG', 'M', 'BBG', 'LP', 15.83
+'MTG', 'U', 'BBG', 'NM', 3.13
